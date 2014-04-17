@@ -8,14 +8,8 @@ name.each_char do |character|
   if vowels.include? character
     article = "an"
   end
-  puts "Give me " + article + " " + character.capitalize
+  puts "Give me " + article + " ... " + character.capitalize
 end
 
-apostrophe = "'s"
-
-if name[-1] == ("s" || "S")
-  apostrophe = "'"
-end
-
-puts name + apostrophe + " " + "just Grand!"
+puts name + "'s " + "just Grand!"
 
